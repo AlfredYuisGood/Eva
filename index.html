@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evaluation Metrics Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+  <script>
+    window.DASHBOARD_EMBEDDED_DATA = [{"date":"2026-02-10","category":"Location","response_time":15.66,"data_accuracy":100,"total_tokens":71987,"summary_readability":71,"summary_quality":75,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-10","category":"Location","response_time":23.64,"data_accuracy":100,"total_tokens":95754,"summary_readability":71,"summary_quality":75,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-10","category":"Location","response_time":21.61,"data_accuracy":100,"total_tokens":95780,"summary_readability":71,"summary_quality":100,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-10","category":"Location","response_time":25.85,"data_accuracy":100,"total_tokens":145512,"summary_readability":71,"summary_quality":100,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-10","category":"Location","response_time":null,"data_accuracy":null,"total_tokens":null,"summary_readability":null,"summary_quality":null,"csv_score":null,"geojson_score":null,"data_source_score":null},{"date":"2026-02-10","category":"Location","response_time":31.88,"data_accuracy":0,"total_tokens":171215,"summary_readability":57,"summary_quality":0,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-10","category":"Location","response_time":15.63,"data_accuracy":100,"total_tokens":72006,"summary_readability":57,"summary_quality":100,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-10","category":"Location","response_time":32.07,"data_accuracy":100,"total_tokens":146369,"summary_readability":57,"summary_quality":100,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-10","category":"Location","response_time":19.96,"data_accuracy":100,"total_tokens":71959,"summary_readability":57,"summary_quality":75,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-10","category":"Valuation","response_time":26.27,"data_accuracy":100,"total_tokens":122129,"summary_readability":57,"summary_quality":75,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-10","category":"Valuation","response_time":43.21,"data_accuracy":100,"total_tokens":121448,"summary_readability":85,"summary_quality":100,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-10","category":"Valuation","response_time":36.31,"data_accuracy":100,"total_tokens":97293,"summary_readability":85,"summary_quality":100,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-10","category":"Valuation","response_time":29.36,"data_accuracy":100,"total_tokens":122081,"summary_readability":85,"summary_quality":100,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-10","category":"Valuation","response_time":24.74,"data_accuracy":0,"total_tokens":122836,"summary_readability":71,"summary_quality":25,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-10","category":"Valuation","response_time":46.62,"data_accuracy":100,"total_tokens":171298,"summary_readability":71,"summary_quality":100,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-11","category":"Location","response_time":null,"data_accuracy":null,"total_tokens":null,"summary_readability":null,"summary_quality":null,"csv_score":null,"geojson_score":null,"data_source_score":null},{"date":"2026-02-11","category":"Location","response_time":16.96,"data_accuracy":100,"total_tokens":72098,"summary_readability":71,"summary_quality":75,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-11","category":"Location","response_time":24.22,"data_accuracy":100,"total_tokens":95700,"summary_readability":42,"summary_quality":100,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-11","category":"Location","response_time":31.86,"data_accuracy":0,"total_tokens":196519,"summary_readability":71,"summary_quality":0,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-11","category":"Location","response_time":26.48,"data_accuracy":100,"total_tokens":170214,"summary_readability":71,"summary_quality":75,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-11","category":"Location","response_time":28.86,"data_accuracy":0,"total_tokens":171701,"summary_readability":71,"summary_quality":0,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-11","category":"Location","response_time":null,"data_accuracy":null,"total_tokens":null,"summary_readability":null,"summary_quality":null,"csv_score":null,"geojson_score":null,"data_source_score":null},{"date":"2026-02-11","category":"Location","response_time":15.59,"data_accuracy":100,"total_tokens":71940,"summary_readability":57,"summary_quality":100,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-11","category":"Location","response_time":15.77,"data_accuracy":100,"total_tokens":71760,"summary_readability":71,"summary_quality":100,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-11","category":"Valuation","response_time":30.65,"data_accuracy":100,"total_tokens":120940,"summary_readability":85,"summary_quality":100,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-11","category":"Valuation","response_time":21.42,"data_accuracy":100,"total_tokens":96725,"summary_readability":85,"summary_quality":100,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-11","category":"Valuation","response_time":23.28,"data_accuracy":100,"total_tokens":97855,"summary_readability":85,"summary_quality":100,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-11","category":"Valuation","response_time":36.51,"data_accuracy":100,"total_tokens":173410,"summary_readability":100,"summary_quality":75,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-11","category":"Valuation","response_time":37.51,"data_accuracy":100,"total_tokens":97835,"summary_readability":85,"summary_quality":75,"csv_score":1,"geojson_score":1,"data_source_score":1},{"date":"2026-02-11","category":"Valuation","response_time":20.15,"data_accuracy":100,"total_tokens":73365,"summary_readability":71,"summary_quality":100,"csv_score":1,"geojson_score":1,"data_source_score":1}];
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Evaluation Dashboard</h1>
+    </header>
+
+    <section class="metrics" id="summary-metrics">
+      <div class="metric-card"><span class="value" id="total-runs">—</span><span class="label">Total Runs</span></div>
+      <div class="metric-card"><span class="value" id="total-days">—</span><span class="label">Evaluation Days</span></div>
+      <div class="metric-card"><span class="value" id="avg-rt">—</span><span class="label">Avg Response Time</span></div>
+      <div class="metric-card"><span class="value" id="avg-da">—</span><span class="label">Avg Data Accuracy</span></div>
+    </section>
+
+    <section class="charts">
+      <div class="chart-box">
+        <div id="chart-response-time" class="chart"></div>
+      </div>
+      <div class="chart-box">
+        <div id="chart-data-accuracy" class="chart"></div>
+      </div>
+    </section>
+
+    <section class="section-title"></section>
+    <div class="chart-box full-width">
+      <div id="chart-response-time-by-cat" class="chart"></div>
+    </div>
+    <br>
+    <div class="chart-box full-width">
+      <div id="chart-data-accuracy-by-cat" class="chart"></div>
+    </div>
+
+    <section class="section-title">
+      <h2>Category Averages Summary</h2>
+    </section>
+    <div class="table-wrap">
+      <table class="summary-table" id="category-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Sample Count</th>
+            <th>Response Time (s)</th>
+            <th>Total Tokens</th>
+            <th>Summary Readability</th>
+            <th>Summary Quality</th>
+            <th>Data Accuracy (%)</th>
+            <th>CSV Score</th>
+            <th>GeoJSON Score</th>
+            <th>Data Source Score</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const DATA_PREFIX = 'data/';
+
+      function parseCSVQuoted(text) {
+        const lines = [];
+        let inQuote = false, field = '', row = [];
+        for (let i = 0; i < text.length; i++) {
+          const c = text[i];
+          if (inQuote) {
+            if (c === '"') {
+              if (text[i + 1] === '"') { field += '"'; i++; }
+              else inQuote = false;
+            } else field += c;
+          } else {
+            if (c === '"') { inQuote = true; }
+            else if (c === ',' || c === '\n' || c === '\r') {
+              row.push(field.trim());
+              field = '';
+              if (c === '\n' || c === '\r') {
+                if (row.length) lines.push(row);
+                row = [];
+                if (c === '\r' && text[i + 1] === '\n') i++;
+              }
+            } else field += c;
+          }
+        }
+        if (field || row.length) row.push(field.trim()), lines.push(row);
+        if (lines.length === 0) return { headers: [], rows: [] };
+        return { headers: lines[0], rows: lines.slice(1) };
+      }
+
+      function dateFromFilename(name) {
+        const m = name.match(/results_(\d{4})(\d{2})(\d{2})_\d+\.csv$/i);
+        return m ? m[1] + '-' + m[2] + '-' + m[3] : '';
+      }
+
+      function fetchCSV(path) {
+        return fetch(DATA_PREFIX + path).then(r => { if (!r.ok) throw new Error(r.statusText); return r.text(); });
+      }
+
+      function loadFromResultCSVs() {
+        return fetchCSV('files.csv').then(text => {
+          const lines = text.trim().split(/\r?\n/).map(s => s.trim()).filter(Boolean);
+          const skipHeader = lines[0] && lines[0].toLowerCase() === 'file';
+          const files = skipHeader ? lines.slice(1) : lines;
+          if (!files.length) return [];
+          const allRows = [];
+          let chain = Promise.resolve();
+          files.forEach(f => {
+            chain = chain.then(() => fetchCSV(f)).then(text => {
+              const parsed = parseCSVQuoted(text);
+              const headers = parsed.headers.map(h => (h || '').trim().toLowerCase());
+              const idx = (name) => { const i = headers.indexOf(name); return i >= 0 ? i : -1; };
+              const iTest = idx('test_id'), iCat = idx('category'), iRt = idx('response_time'), iDa = idx('data_accuracy');
+              const iTk = idx('total_tokens'), iRead = idx('summary_readability'), iQual = idx('summary_quality');
+              const iCsv = idx('csv_score'), iGeo = idx('geojson_score'), iSrc = idx('data_source_score');
+              if (iCat < 0) return;
+              const date = dateFromFilename(f);
+              const num = (v) => { if (v === undefined || v === '') return ''; const n = parseFloat(v); return isNaN(n) ? '' : n; };
+              parsed.rows.forEach(row => {
+                const testId = (row[iTest] || '').toString();
+                if (testId.startsWith('SUMMARY') || testId === 'NA') return;
+                allRows.push({
+                  date,
+                  category: (row[iCat] || '').trim() || 'Other',
+                  response_time: num(row[iRt]),
+                  data_accuracy: num(row[iDa]),
+                  total_tokens: num(row[iTk]),
+                  summary_readability: num(row[iRead]),
+                  summary_quality: num(row[iQual]),
+                  csv_score: num(row[iCsv]),
+                  geojson_score: num(row[iGeo]),
+                  data_source_score: num(row[iSrc])
+                });
+              });
+            });
+          });
+          return chain.then(() => allRows);
+        });
+      }
+
+      function aggregateFromResults(rows) {
+        const num = v => v !== '' && v != null && !isNaN(Number(v));
+        const dates = [...new Set(rows.map(r => r.date).filter(Boolean))].sort();
+        const dailyRows = [];
+        dates.forEach(date => {
+          const dayRows = rows.filter(r => r.date === date);
+          const rtVals = dayRows.map(r => r.response_time).filter(num).map(Number);
+          const daVals = dayRows.map(r => r.data_accuracy).filter(num).map(Number);
+          dailyRows.push({
+            date,
+            category: 'Overall',
+            response_time: rtVals.length ? (rtVals.reduce((a, b) => a + b, 0) / rtVals.length).toFixed(2) : '',
+            data_accuracy: daVals.length ? (daVals.reduce((a, b) => a + b, 0) / daVals.length).toFixed(2) : '',
+            sample_count: dayRows.length
+          });
+          [...new Set(dayRows.map(r => r.category).filter(Boolean))].sort().forEach(cat => {
+            const catRows = dayRows.filter(r => r.category === cat);
+            const crt = catRows.map(r => r.response_time).filter(num).map(Number);
+            const cda = catRows.map(r => r.data_accuracy).filter(num).map(Number);
+            dailyRows.push({
+              date,
+              category: cat,
+              response_time: crt.length ? (crt.reduce((a, b) => a + b, 0) / crt.length).toFixed(2) : '',
+              data_accuracy: cda.length ? (cda.reduce((a, b) => a + b, 0) / cda.length).toFixed(2) : '',
+              sample_count: catRows.length
+            });
+          });
+        });
+        const categories = [...new Set(rows.map(r => r.category).filter(Boolean))].sort();
+        const avg = (arr, key) => { const v = arr.map(r => r[key]).filter(num).map(Number); return v.length ? (v.reduce((a, b) => a + b, 0) / v.length) : ''; };
+        const categoryRows = categories.map(cat => {
+          const catRows = rows.filter(r => r.category === cat);
+          return {
+            category: cat,
+            sample_count: catRows.length,
+            response_time: avg(catRows, 'response_time'),
+            total_tokens: avg(catRows, 'total_tokens'),
+            summary_readability: avg(catRows, 'summary_readability'),
+            summary_quality: avg(catRows, 'summary_quality'),
+            data_accuracy: avg(catRows, 'data_accuracy'),
+            csv_score: avg(catRows, 'csv_score'),
+            geojson_score: avg(catRows, 'geojson_score'),
+            data_source_score: avg(catRows, 'data_source_score')
+          };
+        });
+        return { dailyRows, categoryRows };
+      }
+
+      function buildTimeSeriesChart(containerId, dailyRows, metric, title, overallOnly) {
+        const key = metric === 'response_time' ? 'response_time' : 'data_accuracy';
+        const yLabel = metric === 'response_time' ? 'Response Time' : 'Data Accuracy';
+        const rows = overallOnly ? dailyRows.filter(r => r.category === 'Overall') : dailyRows;
+        const categories = [...new Set(rows.map(r => r.category))].sort();
+        const defaultColors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd'];
+        const num = v => v !== '' && v != null && !isNaN(Number(v));
+        const avgByCat = {};
+        categories.forEach(cat => {
+          const vals = rows.filter(r => r.category === cat).map(r => r[key]).filter(num).map(Number);
+          avgByCat[cat] = vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : null;
+        });
+        const exceedCat = metric === 'response_time'
+          ? categories.reduce((a, b) => (avgByCat[b] != null && (avgByCat[a] == null || avgByCat[b] > avgByCat[a]) ? b : a), null)
+          : categories.reduce((a, b) => (avgByCat[b] != null && (avgByCat[a] == null || avgByCat[b] < avgByCat[a]) ? b : a), null);
+
+        const traces = categories.map((cat, i) => {
+          const sub = rows.filter(r => r.category === cat).sort((a, b) => a.date.localeCompare(b.date));
+          const x = sub.map(r => r.date);
+          const y = sub.map(r => { const v = r[key]; return v === '' || v === undefined ? null : Number(v); });
+          const count = sub.map(r => r.sample_count);
+          const isExceed = cat === exceedCat;
+          const text = y.map(v => v != null && !isNaN(v) ? Number(v).toFixed(1) : '');
+          return {
+            x, y,
+            mode: 'lines+markers+text',
+            text: text,
+            textposition: 'top center',
+            textfont: { size: 11 },
+            name: cat,
+            line: { color: isExceed ? '#d62728' : defaultColors[i % defaultColors.length], width: isExceed ? 2.5 : 2 },
+            marker: { size: isExceed ? 8 : 6 },
+            customdata: count,
+            hovertemplate: 'Date: %{x}<br>' + yLabel + ': %{y:.2f}<br>Samples: %{customdata}<extra></extra>'
+          };
+        }).filter(t => t.y.some(v => v != null));
+
+        const allY = traces.flatMap(t => t.y).filter(v => v != null && !isNaN(v));
+        const yMin = allY.length ? Math.min(...allY) : 0;
+        const yMax = allY.length ? Math.max(...allY) : 100;
+        const pad = Math.max((yMax - yMin) * 0.15, 2.5);
+        const layout = {
+          title,
+          xaxis: { title: 'Date', tickformat: '%b %d, %Y', type: 'date' },
+          yaxis: { title: yLabel, range: [yMin - pad, yMax + pad] },
+          hovermode: 'closest',
+          hoverlabel: { namelength: 0 },
+          legend: { orientation: 'h', y: 1.02 },
+          height: 400,
+          margin: { t: 50, b: 50 }
+        };
+        const uniqueDates = [...new Set(rows.map(r => r.date))].sort();
+        if (uniqueDates.length) { layout.xaxis.tickmode = 'array'; layout.xaxis.tickvals = uniqueDates; }
+        Plotly.newPlot(containerId, traces, layout, { responsive: true });
+      }
+
+      function renderSummaryMetrics(dailyRows, categoryRows) {
+        const overall = dailyRows.filter(r => r.category === 'Overall');
+        const totalRuns = categoryRows.reduce((s, r) => s + (Number(r.sample_count) || 0), 0);
+        let sumRt = 0, sumDa = 0, nRt = 0, nDa = 0;
+        overall.forEach(r => {
+          if (r.response_time !== '' && r.response_time != null) { sumRt += Number(r.response_time); nRt++; }
+          if (r.data_accuracy !== '' && r.data_accuracy != null) { sumDa += Number(r.data_accuracy); nDa++; }
+        });
+        document.getElementById('total-runs').textContent = totalRuns.toLocaleString();
+        document.getElementById('total-days').textContent = overall.length;
+        document.getElementById('avg-rt').textContent = nRt ? (sumRt / nRt).toFixed(2) + 's' : 'N/A';
+        document.getElementById('avg-da').textContent = nDa ? (sumDa / nDa).toFixed(1) + '%' : 'N/A';
+      }
+
+      function fmt(v) { return v !== '' && v != null && !isNaN(Number(v)) ? Number(v).toFixed(2) : ''; }
+      function renderCategoryTable(rows) {
+        const tbody = document.querySelector('#category-table tbody');
+        tbody.innerHTML = '';
+        rows.forEach(r => {
+          const tr = document.createElement('tr');
+          tr.innerHTML = '<td>' + (r.category || '') + '</td><td>' + (r.sample_count != null ? r.sample_count : '') + '</td><td>' + fmt(r.response_time) + '</td><td>' + fmt(r.total_tokens) + '</td><td>' + fmt(r.summary_readability) + '</td><td>' + fmt(r.summary_quality) + '</td><td>' + fmt(r.data_accuracy) + '</td><td>' + fmt(r.csv_score) + '</td><td>' + fmt(r.geojson_score) + '</td><td>' + fmt(r.data_source_score) + '</td>';
+          tbody.appendChild(tr);
+        });
+      }
+
+      function runWithRows(rows) {
+        const withDate = rows.filter(r => r.date);
+        if (!withDate.length) throw new Error('No data rows.');
+        const { dailyRows, categoryRows } = aggregateFromResults(withDate);
+        renderSummaryMetrics(dailyRows, categoryRows);
+        renderCategoryTable(categoryRows);
+        buildTimeSeriesChart('chart-response-time', dailyRows, 'response_time', 'Response Time Over Time', true);
+        buildTimeSeriesChart('chart-data-accuracy', dailyRows, 'data_accuracy', 'Data Accuracy Over Time', true);
+        buildTimeSeriesChart('chart-response-time-by-cat', dailyRows, 'response_time', 'Average Response Time by Category Over Time', false);
+        buildTimeSeriesChart('chart-data-accuracy-by-cat', dailyRows, 'data_accuracy', 'Average Data Accuracy by Category Over Time', false);
+      }
+
+      if (window.DASHBOARD_EMBEDDED_DATA && Array.isArray(window.DASHBOARD_EMBEDDED_DATA) && window.DASHBOARD_EMBEDDED_DATA.length > 0) {
+        try { runWithRows(window.DASHBOARD_EMBEDDED_DATA); } catch (e) {
+          document.body.innerHTML = '<div class="container"><p class="error">' + e.message + '</p></div>';
+        }
+      } else {
+        loadFromResultCSVs().then(runWithRows).catch(err => {
+          document.body.innerHTML = '<div class="container"><p class="error">Failed to load data: ' + err.message + '. 直接打开 HTML 时请用本地服务器（如在 dashboard 目录运行 python3 -m http.server 8080）或部署到 GitHub Pages 后再访问。</p></div>';
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
